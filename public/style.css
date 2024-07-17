@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #8F8BE8;
+
+    /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
+    font-family: 'Roboto', sans-serif;
+}
+
+section .chat__section {
+    width: 800px;
+    max-width: 90%;
+    background: #311818;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+section {
+    border: 0.4px solid black;
+
+}
+
+.brand {
+    /* padding: 0px; */
+    background: #00E4E3;
+    /* background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%); */
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.brand h1 {
+    font-size: 22px;
+    color: #2b2b2b;
+    margin-left: 10px;
+}
+
+.message__area {
+    height: 500px;
+    width: 750px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+    background-color: white;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    background: #00E4E3;
+
+    /* background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%); */
+    resize: none;
+    border-top: 0.5px solid black;
+}
+
+textarea::placeholder {
+    color: black;
+
+}
+
+.message {
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    max-width: 300px;
+    position: relative;
+    border: 1x solid black;
+}
+
+.incoming {
+    background: #8F8BE8;
+    color: #fff;
+}
+
+.outgoing {
+    background: #00E4E3;
+    /* background: #e9eafd; */
+    color: rgb(73, 73, 73);
+    margin-left: auto;
+}
+
+.message h4 {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: #2d2c2c;
+    font-size: 14px;
+}
+
+/* Media Queries */
+
+/* Large screens (Desktops) */
+@media only screen and (min-width: 1200px) {
+    section.chat__section {
+        width: 1000px;
+    }
+
+    .message__area {
+        width: 900px;
+    }
+}
+
+/* Medium screens (Laptops) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    section.chat__section {
+        width: 800px;
+    }
+
+    .message__area {
+        width: 700px;
+    }
+}
+
+/* Small screens (Tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    section.chat__section {
+        width: 600px;
+    }
+
+    .message__area {
+        width: 500px;
+    }
+}
+
+/* Extra small screens (Mobiles) */
+@media only screen and (max-width: 767px) {
+    /* section.chat__section {
+        width: 90%;
+    }
+
+    .message__area {
+        width: 80%;
+    }
+
+    .brand h1 {
+        font-size: 18px;
+    }
+
+    .message {
+        max-width: 200px;
+    } */
+    section.chat__section {
+        width: 400px;
+    }
+
+    .message__area {
+        width: 300px;
+    }
+}
+
